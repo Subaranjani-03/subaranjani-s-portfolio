@@ -18,7 +18,7 @@ const Header = () => {
     <header>
       <div className="head">
         <div className="logo">
-          <img src="./src/image/head1.png" alt="Subaranjani" />
+          <img src="image/head1.png" alt="Subaranjani" />
         </div>
 
         <i

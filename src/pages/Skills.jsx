@@ -9,27 +9,27 @@ const Skills = () => {
           <h1>Frontend</h1>
           <div className="skill-box front-skill">
             <div className="img">
-              <img src="./src/image/html.png" alt="html" />
+              <img src="image/html.png" alt="html" />
               <p>HTML</p>
             </div>
             <div className="img">
-              <img src="./src/image/css.png" alt="css" />
+              <img src="image/css.png" alt="css" />
               <p>CSS</p>
             </div>
             <div className="img">
-              <img src="./src/image/bootstrap.png" alt="bootstrap" />
+              <img src="image/bootstrap.png" alt="bootstrap" />
               <p>BOOTSTRAP</p>
             </div>
             <div className="img">
-              <img src="./src/image/js.png" alt="javascript" />
+              <img src="image/js.png" alt="javascript" />
               <p>JAVASCRIPT</p>
             </div>
             <div className="img">
-              <img src="./src/image/jquery.png" alt="jquery" />
+              <img src="image/jquery.png" alt="jquery" />
               <p>JQUERY</p>
             </div>
             <div className="img">
-              <img src="./src/image/react.png" alt="react" />
+              <img src="image/react.png" alt="react" />
               <p>REACT JS</p>
             </div>
           </div>
@@ -38,15 +38,15 @@ const Skills = () => {
           <h1>Backend</h1>
           <div className="skill-box back-skill">
             <div className="img">
-              <img src="./src/image/node.png" alt="node" />
+              <img src="image/node.png" alt="node" />
               <p>NODE JS</p>
             </div>
             <div className="img">
-              <img src="./src/image/express2.png" alt="express" />
+              <img src="image/express2.png" alt="express" />
               <p>EXPRESS JS</p>
             </div>
             <div className="img">
-              <img src="./src/image/mongodb.png" alt="mongodb" />
+              <img src="image/mongodb.png" alt="mongodb" />
               <p>MONGODB</p>
             </div>
           </div>
@@ -56,11 +56,11 @@ const Skills = () => {
           <h1>Tools</h1>
           <div className="skill-box tool-skill">
             <div className="img">
-              <img src="./src/image/github2.png" alt="github" />
+              <img src="image/github2.png" alt="github" />
               <p>GITHUB</p>
             </div>
             <div className="img">
-              <img src="./src/image/vscode.png" alt="vscode" />
+              <img src="image/vscode.png" alt="vscode" />
               <p>VS CODE</p>
             </div>
           </div>
