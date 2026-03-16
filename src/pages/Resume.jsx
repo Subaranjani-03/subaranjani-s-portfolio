@@ -87,7 +87,7 @@ const Resume = () => {
 
       <div className="resume-preview">
         <h2 className="resume-title">My Resume</h2>
-        <iframe src="/public/Subaranjani-cv.pdf" title="Resume"></iframe>
+        <iframe src="Subaranjani-cv.pdf" title="Resume"></iframe>
       </div>
     </div>
   );
