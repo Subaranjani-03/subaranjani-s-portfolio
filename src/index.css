@@ -12,19 +12,18 @@
   --Inter: "Inter", sans-serif;
   --Playfair: "Playfair Display", serif;
   --Space: "Space Grotesk", sans-serif;
-
   --text: #6d57fa;
   --home-head: #6d57fa;
   --white: white;
   --background: #10111a;
   --icon: #101536;
-  --nav-mob: rgb(255, 255, 255, 0.7);
+  --nav-mob: rgb(255, 255, 255);
   --skill-bg: rgb(109, 87, 250, 0.2);
   --proj-card: rgba(78, 77, 82, 0.08);
   --contact: white;
   --contact-border: rgba(255, 255, 255, 0.2);
-  --project-hover:rgba(109, 87, 250, 0.5);
-  --nav-bg:white;
+  --project-hover: rgba(109, 87, 250, 0.5);
+  --nav-bg: white;
 }
 
 body {
@@ -33,7 +32,7 @@ body {
 
 /* LIGHT THEME */
 .light-theme {
-  --background: #ffffff;
+  --background: #f4f4f7;
   --text: #6d57fa;
   --icon: #e6e6ff;
   --white: #000000;
@@ -42,6 +41,6 @@ body {
   --proj-card: rgba(78, 77, 82, 0.1);
   --contact: rgba(78, 77, 82, 0.2);
   --contact-border: rgba(0, 0, 0, 0.3);
-  --project-hover:rgb(100, 81, 225);
-  --nav-bg:#101536;
+  --project-hover: rgb(100, 81, 225);
+  --nav-bg: #101536;
 }

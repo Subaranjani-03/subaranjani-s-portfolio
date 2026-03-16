@@ -172,7 +172,7 @@
 /* -------mobile view-------- */
 @media all and (max-width: 576px) {
   .skill-page {
-    padding-bottom: 70px;
+    padding-bottom: 100px;
   }
   .skill-page .skills {
     width: 95%;

@@ -4,7 +4,6 @@ import Education from "./Education";
 import Stats from "./Stats";
 
 const About = () => {
-  // Stats data (passed as props)
   const statsData = [
     {
       icon: "fa-solid fa-laptop-code",
@@ -55,7 +54,11 @@ const About = () => {
                 </p>
 
                 {/* Download CV */}
-                <a href="./public/Subaranjani-cv.pdf" download className="download-btn">
+                <a
+                  href="./public/Subaranjani-cv.pdf"
+                  download
+                  className="download-btn"
+                >
                   Download CV
                 </a>
               </div>

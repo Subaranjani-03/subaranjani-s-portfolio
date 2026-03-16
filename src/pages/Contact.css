@@ -29,7 +29,7 @@
 }
 .contact-right h1 {
   font-size: 1.5rem;
-  color: var(--white);
+  color: var(--text);
   font-family: var(--Inter);
 }
 .contact-right form {

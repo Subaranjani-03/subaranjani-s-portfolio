@@ -2,7 +2,7 @@
   /* border: 1px solid blue; */
   display: flex;
   justify-content: center;
-  padding: 60px 20px;
+  padding: 30px 20px 60px 20px;
   font-family: var(--poppins);
   color: var(--white);
 }
@@ -15,8 +15,6 @@
   gap: 60px;
 }
 
-/* TITLE */
-
 .about-title {
   text-align: center;
   font-size: 32px;
@@ -24,8 +22,6 @@
   font-family: var(--Space);
   color: var(--text);
 }
-
-/* TOP SECTION */
 
 .about-top {
   /* border: 1px solid red; */
@@ -35,8 +31,6 @@
   gap: 40px;
   flex-wrap: wrap;
 }
-
-/* PERSONAL INFO */
 
 .personal-info {
   /* border: 1px solid red; */
@@ -52,8 +46,6 @@
   margin-bottom: 20px;
   color: var(--text);
 }
-
-/* TWO COLUMNS INSIDE CARD */
 
 .info-columns {
   display: flex;
@@ -81,10 +73,9 @@
 
 .download-btn:hover {
   background: var(--white);
-  color: var(--text); 
+  color: var(--text);
   transform: translateY(-2px);
 }
-/* EDUCATION SECTION */
 
 .about-education {
   /* border: 1px solid red; */
@@ -102,8 +93,6 @@
   color: var(--text);
 }
 
-/* EDUCATION CARD */
-
 .edu-card {
   background: var(--proj-card);
   padding: 18px;
@@ -114,7 +103,6 @@
 
 .edu-card:hover {
   transform: translateY(-4px);
-  /* box-shadow: 0 5px 15px var(--project-hover); */
 }
 
 .edu-card h4 {
@@ -126,8 +114,6 @@
   font-size: 14px;
   opacity: 0.8;
 }
-
-/* STATS */
 
 .stats-section {
   display: flex;
@@ -149,8 +135,6 @@
   gap: 20px;
 }
 
-/* STAT CARD */
-
 .card {
   background: var(--proj-card);
   border: 1px solid var(--contact-border);
@@ -170,7 +154,6 @@
   box-shadow: 0 8px 20px var(--project-hover);
 }
 
-/* ICON BACKGROUND */
 .stat-icon {
   width: 60px;
   height: 60px;
@@ -196,7 +179,7 @@
 @media (max-width: 768px) {
   .about {
     width: 95%;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
 
   .about-top {
@@ -214,14 +197,12 @@
     width: 100%;
   }
 
-  /* Make top section full width */
   .about-top {
     flex-direction: column;
     align-items: stretch;
     gap: 25px;
   }
 
-  /* Force cards to take full width */
   .personal-info,
   .about-education {
     width: 100%;
@@ -231,7 +212,7 @@
     flex-direction: column;
     gap: 0;
   }
-    .download-btn {
+  .download-btn {
     display: none;
   }
   .stats {

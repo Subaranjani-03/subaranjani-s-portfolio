@@ -31,11 +31,12 @@ const Project = () => {
       title: "Employee Salary Management",
       desc: "A web-based application for managing employee records and salary details. It includes features like adding, editing, and deleting employee information with a clean interface. The system helps organize employee data and simplifies salary tracking.",
       link: "https://employee-salary-management.vercel.app/",
-    }
+    },
   ];
 
   return (
     <div className="project-page">
+      <h1 className="project-title">Projects</h1>
       <div className="project">
         {projects.map((proj, index) => (
           <ProjectCard
