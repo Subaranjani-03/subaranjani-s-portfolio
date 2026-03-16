@@ -1,0 +1,231 @@
+.resume {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.resume-page {
+  /* border: 1px solid red; */
+  padding: 40px 20px;
+  max-width: 70%;
+  font-family: var(--poppins);
+  color: var(--white);
+}
+
+.resume-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: var(--Space);
+  color: var(--text);
+  margin-bottom: 50px;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background: var(--text);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: var(--text);
+  border-radius: 50%;
+  top: 25px;
+  right: -7px;
+}
+
+.timeline-item.right::after {
+  left: -7px;
+}
+
+.content {
+  background: var(--proj-card);
+  padding: 22px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  transition: .6s;
+}
+
+.content:hover {
+  background-color: var(--project-hover);
+  /* transform: translateY(-6px); */
+  /* box-shadow: 0 10px 20px var(--project-hover); */
+}
+.content:hover h3 {
+  color: white;
+}
+.content h3 {
+  margin-bottom: 10px;
+  font-family: var(--Montserrat);
+  color: var(--text);
+}
+
+.content p {
+  font-size: 14px;
+  color: var(--nav-mob);
+  line-height: 1.6;
+}
+.about-list {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+.about-list li {
+  margin-bottom: 6px;
+  color: var(--nav-mob);
+  font-size: 14px;
+}
+
+.education {
+  margin-top: 15px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.education h4 {
+  font-size: 16px;
+  font-family: var(--Inter);
+  color: var(--white);
+}
+
+.education span {
+  font-size: 13px;
+  color: var(--nav-mob);
+}
+
+.education p {
+  font-size: 14px;
+}
+
+.project-card {
+  /* border-radius: 1px solid red; */
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid var(--contact-border);
+  background: var(--proj-card);
+}
+
+.project-card h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-family: var(--Montserrat);
+  color: var(--white);
+}
+
+.project-card p {
+  font-size: 14px;
+  color: var(--nav-mob);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.project-tech {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-tech span {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: var(--skill-bg);
+  color: var(--white);
+}
+
+/* --------media query------- */
+
+/* -------tab view-------- */
+
+@media all and (max-width: 768px) {
+  .resume-page {
+    max-width: 90%;
+    padding-bottom: 80px;
+  }
+
+  .timeline::after {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 20px;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline-item::after {
+    left: 13px;
+    right: auto;
+  }
+
+  .timeline-item.right::after {
+    left: 13px;
+  }
+}
+
+/* -------mobile view-------- */
+@media all and (max-width: 576px) {
+  .resume-page {
+    padding: 30px 5px 80px 5px;
+  }
+
+  .resume-title {
+    font-size: 26px;
+  }
+
+  .content {
+    padding: 18px;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .project-card h4 {
+    font-size: 16px;
+  }
+
+  .project-tech span {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .about-list li {
+    font-size: 13px;
+  }
+}

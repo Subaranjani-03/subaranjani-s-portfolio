@@ -1,0 +1,240 @@
+.about-page {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  font-family: var(--poppins);
+  color: var(--white);
+}
+
+.about {
+  /* border: 1px solid red; */
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* TITLE */
+
+.about-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: var(--Space);
+  color: var(--text);
+}
+
+/* TOP SECTION */
+
+.about-top {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* PERSONAL INFO */
+
+.personal-info {
+  /* border: 1px solid red; */
+  flex: 1;
+  min-width: 260px;
+  background: var(--proj-card);
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid var(--contact-border);
+}
+
+.personal-info h3 {
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+/* TWO COLUMNS INSIDE CARD */
+
+.info-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.info-columns p {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: var(--text);
+  color: var(--white);
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.download-btn:hover {
+  background: var(--white);
+  color: var(--text); 
+  transform: translateY(-2px);
+}
+/* EDUCATION SECTION */
+
+.about-education {
+  /* border: 1px solid red; */
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid var(--contact-border);
+}
+
+.about-education h3 {
+  color: var(--text);
+}
+
+/* EDUCATION CARD */
+
+.edu-card {
+  background: var(--proj-card);
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid var(--contact-border);
+  transition: 0.3s;
+}
+
+.edu-card:hover {
+  transform: translateY(-4px);
+  /* box-shadow: 0 5px 15px var(--project-hover); */
+}
+
+.edu-card h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.edu-card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* STATS */
+
+.stats-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.stats-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.stats {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+/* STAT CARD */
+
+.card {
+  background: var(--proj-card);
+  border: 1px solid var(--contact-border);
+  padding: 25px 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px var(--project-hover);
+}
+
+/* ICON BACKGROUND */
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  background-color: #101536;
+  margin-bottom: 10px;
+}
+.card span {
+  display: block;
+  font-size: 1rem;
+  margin-top: 5px;
+  opacity: 0.8;
+}
+
+/* --------media query------- */
+
+/* -------tab view-------- */
+@media (max-width: 768px) {
+  .about {
+    width: 95%;
+    padding-bottom: 50px;
+  }
+
+  .about-top {
+    flex-direction: column;
+  }
+  .stats {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+    gap: 30px;
+  }
+}
+
+/* -------mobile view-------- */
+@media all and (max-width: 576px) {
+  .about {
+    width: 100%;
+  }
+
+  /* Make top section full width */
+  .about-top {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 25px;
+  }
+
+  /* Force cards to take full width */
+  .personal-info,
+  .about-education {
+    width: 100%;
+    min-width: unset;
+  }
+  .info-columns {
+    flex-direction: column;
+    gap: 0;
+  }
+    .download-btn {
+    display: none;
+  }
+  .stats {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+  }
+}

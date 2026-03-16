@@ -1,0 +1,86 @@
+/* header styles */
+
+header {
+  /* border: 1px solid red; */
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+header .head {
+  /* border: 1px solid blue; */
+  height: 100%;
+  width: 100%;
+  max-width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .head .logo {
+  /* border: 1px solid red; */
+  height: 40px;
+  width: 40px;
+}
+header .head .logo img {
+  height: 100%;
+  width: 100%;
+}
+header .head .logo a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: var(--text);
+  font-family: var(--poppins);
+  font-weight: 600;
+}
+header .head .theme-icon {
+  font-size: 1.2rem;
+  color: var(--white);
+  transition: 0.6s;
+  cursor: pointer;
+}
+header .head .theme-icon:hover {
+  color: var(--text);
+}
+.theme-icon {
+  font-size: 25px;
+  position: relative;
+  cursor: pointer;
+}
+
+.theme-icon::after {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text);
+  color: var(--white);
+  font-size: 0.6rem;
+  padding: 4px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: 0.3s;
+  white-space: nowrap;
+  font-family: var(--poppins);
+}
+
+.fa-sun::after {
+  content: "Light Mode";
+}
+
+.fa-moon::after {
+  content: "Dark Mode";
+}
+
+.theme-icon:hover::after {
+  opacity: 1;
+}
+
+/* --------media query------- */
+
+/* -------tab view-------- */
+@media all and (max-width: 768px) {
+}
+
+/* -------mobile view-------- */
+@media all and (max-width: 576px) {
+}
