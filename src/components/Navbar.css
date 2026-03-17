@@ -97,10 +97,16 @@ nav ul li a:hover span {
 
 /* -------mobile view-------- */
 @media all and (max-width: 576px) {
+  .navigation nav {
+    padding: 10px 5px;
+  }
   nav ul {
     gap: 0;
   }
   nav ul li i {
     font-size: 1.2rem;
+  }
+  nav ul li a {
+    padding: 12px 14px;
   }
 }
