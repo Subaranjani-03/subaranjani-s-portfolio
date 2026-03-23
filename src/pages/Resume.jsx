@@ -82,9 +82,36 @@ const Resume = () => {
               />
             </div>
           </div>
+
+          {/* intership */}
+
+          <div className="timeline-item left">
+            <div className="content">
+              <h3>Internship</h3>
+
+              <ul className="about-list">
+                <li>
+                  Full Stack Developer Intern | Suyap Tech Solutions, Trichy
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* certificate */}
+          <div className="timeline-item right">
+            <div className="content">
+              <h3>Certification</h3>
+
+              <ul className="about-list">
+                <li>
+                  Certified MERN STACK DEVELOPER | Skill Development Learning
+                  Center, Trichy
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
-
 
       <div className="resume-preview">
         <h2 className="resume-title">My Resume</h2>
