@@ -80,6 +80,16 @@ const Resume = () => {
                 description="Responsive bag shopping website with product listings, stylish layouts, and interactive elements to simulate an e-commerce experience."
                 tech={["HTML", "CSS", "JS"]}
               />
+              <ResumeCard
+                title="Employee Salary Management"
+                description="Responsive web-based employee salary management application to manage employee records, salary details, and payroll operations."
+                tech={["HTML", "CSS", "JQUERY"]}
+              />
+              <ResumeCard
+                title="SongSpot"
+                description="Responsive web-based music search application built using React with voice search and audio playback, integrating the iTunes API using Axios."
+                tech={["REACT JS"]}
+              />
             </div>
           </div>
 

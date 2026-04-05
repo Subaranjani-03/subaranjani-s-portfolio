@@ -32,6 +32,13 @@ const Project = () => {
       desc: "A web-based application for managing employee records and salary details. It includes features like adding, editing, and deleting employee information with a clean interface. The system helps organize employee data and simplifies salary tracking.",
       link: "https://employee-salary-management.vercel.app/",
     },
+    {
+      img: "image/proj6.png",
+      tech: "REACT JS",
+      title: "SongSpot",
+      desc: "A web-based application developed using React that fetches song data from the iTunes API using Axios. It includes voice search, audio preview playback with play/pause controls, loading indicators, and a responsive user-friendly interface. Demonstrates skills in React Hooks, API integration, state management, and building interactive front-end applications.",
+      link: "https://songspot-app.vercel.app/",
+    },
   ];
 
   return (
